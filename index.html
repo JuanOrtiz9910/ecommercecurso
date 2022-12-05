@@ -8,25 +8,55 @@
     <title>Desarrollador Web <Front-end></Front-end></title>
 </head>
 <body>
+    
    <header class="menu">
     <nav>
         <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./mision.html">MISIÓN</a></li>
-            <li><a href="./portafolio.html">PORTAFOLIO</a></li>
-            <li><a href="./contacto.html">CONTACTOS</a></li>
+            <li class="inicio"><a href="./index.html">INICIO</a></li>
+            <li class="mision"><a href="./mision.html">MISIÓN</a></li>
+            <li class="porta"><a href="./portafolio.html">PORTAFOLIO</a></li>
+            <li class="contact"><a href="./contacto.html">CONTACTOS</a></li>
         </ul>
+        <div class="busqueda">
+            <input class="buscador" type="" placeholder="BUSQUEDA">
+        </div>
     </nav>
-    <div><img src="imagenes/580b57fcd9996e24bc43c325.png" width="100" height="100" alt="Logo"></div>
+    <div class="logo"><img src="imagenes/580b57fcd9996e24bc43c325.png" width="100" height="100" alt="Logo"></div>
+    <aside class="carrito"><img src="./imagenes/carrito.png" width="50" height="50" alt=""></aside>
    </header>
    <main>
-    <section>
+    <br>
+    <br> 
+    <section >
         <h1 id="titulo">Desarrollador Profesional Front-end</h1>
-        <img src="./imagenes/1995515.png" width="100" height="100" alt="Programador trabajando">
+        <img class="presentacion" src="./imagenes/1995515.png" width="100" height="100" alt="Programador trabajando">
         <p class="parrafoCentral">Ingeniero en mecatrónica con conocimientos en catia, solidworks y html</p>
     </section>
+    <style>
+        .presentacion{
+           transform: translate(700px,0px);
+        }
+    </style>
     <section>
-        <h2 >Conocimientos sobre programación</h2>
+        <h2 class="anima">Conocimientos sobre programación</h2>
+        <style>
+            @keyframes progre
+             {
+                0%{width: 0%; background-color: rgb(255, 0, 0);}
+                50%{width:25%;background-color: rgb(255, 145, 0);}
+                75%{width:50%; background-color:rgb(51, 128, 0)}
+                25%{width:75%;  background-color:rgb(0, 169, 248)}
+                100%{width:100%;  background-color:rgb(230, 0, 255)}
+                
+            }
+            .anima{
+                width: 0px;
+                height: 100px;
+                background-color: green;
+
+                animation-name: progre;
+            }
+        </style>
         <ol>
             <li id="lista1">Html</li>
             <li id="lista2">Css</li>
@@ -35,8 +65,33 @@
     </section>
     
     
-    <aside><img src="./imagenes/whatsapp-logo-11.png" width="50" height="50" alt="Whatsaap"></aside>
+    <aside class="wha"><img src="./imagenes/whatsapp-logo-11.png" width="50" height="50" alt="Whatsaap"></aside>
+    <style>
+        .wha{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+
+    <div class="galeria">
+        <img src="./imagenes/1.jpg" alt="" width="150px" height="150px">
+        <img src="./imagenes/2.webp" alt="" width="150px" height="150px">
+        <img src="./imagenes/4.webp" alt="" width="150px" height="150px">
+        <img src="./imagenes/33.webp" alt="" width="150px" height="150px">
+    </div>
     
+    <style>
+        .galeria{
+            border: 2px solid white;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            padding: 5px;
+        }
+    </style>
    </main>
 
 </body>

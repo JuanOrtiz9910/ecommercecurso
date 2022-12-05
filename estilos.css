@@ -1,5 +1,6 @@
 body{
-    background-color: gray;
+    background-image:url(./imagenes/pokemon-live-action-series-in-development-at-netflix_ajyq.jpg) ;
+    position: sticky;
 }
 
 h1{
@@ -108,4 +109,60 @@ section{
 .formulario{
     font-size: larger;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+.buscador{
+    border-radius: 10px;
+    transform:scale(1.25);
+    position: absolute;
+    top: 5px;
+    right: 150px;
+
+}
+
+.buscador:hover{
+    background-color: greenyellow;
+    
+}
+
+.inicio{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+.mision{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+.porta{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 360px;
+}
+.contact{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 520px;
+}
+
+.inicio:hover, .mision:hover, .porta:hover, .contact:hover{
+    color: red;
+
+}
+.carrito{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    
 }
